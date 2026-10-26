@@ -1,0 +1,2 @@
+implementation,M,K,N,tile_size,num_threads,warmup_iters,measured_iters,median_ms,mean_ms,stddev_ms,min_ms,max_ms,gflops,speedup,correctness,max_abs_diff,max_rel_diff,cpu_model,compiler
+openmp_avx2,512,512,512,64,1,2,5,10.5284,12.1485,2.7180,10.0401,17.1751,25.496,0.09,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"

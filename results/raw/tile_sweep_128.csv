@@ -1,0 +1,2 @@
+implementation,M,K,N,tile_size,num_threads,warmup_iters,measured_iters,median_ms,mean_ms,stddev_ms,min_ms,max_ms,gflops,speedup,correctness,max_abs_diff,max_rel_diff,cpu_model,compiler
+blocked,512,512,512,128,0,2,5,36.5280,39.7208,7.2360,32.8949,51.5502,7.349,0.03,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"

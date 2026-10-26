@@ -1,0 +1,100 @@
+{
+  "cpu_model": "AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx",
+  "compiler": "GCC 11.4",
+  "matrix_dimensions": {"M": 512, "K": 512, "N": 512},
+  "tile_size": 64,
+  "num_threads": 0,
+  "benchmarks": [
+    {
+      "implementation": "baseline",
+      "median_ms": 393.9016,
+      "mean_ms": 401.1855,
+      "stddev_ms": 22.0504,
+      "min_ms": 383.9302,
+      "max_ms": 462.8122,
+      "gflops": 0.681,
+      "speedup": 1.00,
+      "correctness": "PASSED",
+      "max_abs_diff": 0.0000e+00,
+      "max_rel_diff": 0.0000e+00
+    },
+    {
+      "implementation": "cache_friendly",
+      "median_ms": 20.5650,
+      "mean_ms": 20.9427,
+      "stddev_ms": 1.9908,
+      "min_ms": 19.2423,
+      "max_ms": 26.5357,
+      "gflops": 13.053,
+      "speedup": 19.15,
+      "correctness": "PASSED",
+      "max_abs_diff": 0.0000e+00,
+      "max_rel_diff": 0.0000e+00
+    },
+    {
+      "implementation": "blocked",
+      "median_ms": 24.2405,
+      "mean_ms": 24.2832,
+      "stddev_ms": 1.6241,
+      "min_ms": 22.0825,
+      "max_ms": 27.5006,
+      "gflops": 11.074,
+      "speedup": 16.25,
+      "correctness": "PASSED",
+      "max_abs_diff": 0.0000e+00,
+      "max_rel_diff": 0.0000e+00
+    },
+    {
+      "implementation": "avx2",
+      "median_ms": 10.2394,
+      "mean_ms": 10.5945,
+      "stddev_ms": 0.9200,
+      "min_ms": 9.8732,
+      "max_ms": 13.0287,
+      "gflops": 26.216,
+      "speedup": 38.47,
+      "correctness": "PASSED",
+      "max_abs_diff": 0.0000e+00,
+      "max_rel_diff": 0.0000e+00
+    },
+    {
+      "implementation": "openmp",
+      "median_ms": 24.8050,
+      "mean_ms": 22.9910,
+      "stddev_ms": 5.5012,
+      "min_ms": 8.8033,
+      "max_ms": 29.2377,
+      "gflops": 10.822,
+      "speedup": 15.88,
+      "correctness": "PASSED",
+      "max_abs_diff": 0.0000e+00,
+      "max_rel_diff": 0.0000e+00
+    },
+    {
+      "implementation": "openmp_avx2",
+      "median_ms": 20.5851,
+      "mean_ms": 20.5562,
+      "stddev_ms": 0.6408,
+      "min_ms": 19.4135,
+      "max_ms": 21.7655,
+      "gflops": 13.040,
+      "speedup": 19.14,
+      "correctness": "PASSED",
+      "max_abs_diff": 0.0000e+00,
+      "max_rel_diff": 0.0000e+00
+    },
+    {
+      "implementation": "blas",
+      "median_ms": 3.7189,
+      "mean_ms": 4.6476,
+      "stddev_ms": 1.7314,
+      "min_ms": 3.3796,
+      "max_ms": 8.6262,
+      "gflops": 72.182,
+      "speedup": 105.92,
+      "correctness": "PASSED",
+      "max_abs_diff": 3.2425e-05,
+      "max_rel_diff": 1.7644e-02
+    }
+  ]
+}

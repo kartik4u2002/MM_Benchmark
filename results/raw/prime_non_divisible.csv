@@ -1,0 +1,8 @@
+implementation,M,K,N,tile_size,num_threads,warmup_iters,measured_iters,median_ms,mean_ms,stddev_ms,min_ms,max_ms,gflops,speedup,correctness,max_abs_diff,max_rel_diff,cpu_model,compiler
+baseline,389,457,521,64,0,3,10,259.6049,273.2498,55.1480,200.5908,398.7233,0.714,1.00,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"
+cache_friendly,389,457,521,64,0,3,10,26.2226,27.2800,4.3925,21.3290,35.6852,7.064,9.90,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"
+blocked,389,457,521,64,0,3,10,26.2488,25.5182,5.3357,19.0480,37.1456,7.057,9.89,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"
+avx2,389,457,521,64,0,3,10,8.7532,8.5225,0.8317,7.3631,9.5689,21.162,29.66,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"
+openmp,389,457,521,64,0,3,10,14.3987,14.4319,1.5372,12.0018,17.4251,12.865,18.03,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"
+openmp_avx2,389,457,521,64,0,3,10,6.2111,7.6886,3.6166,3.8352,13.2658,29.824,41.80,PASSED,0.0000e+00,0.0000e+00,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"
+blas,389,457,521,64,0,3,10,8.8538,9.6397,2.9671,6.2231,15.9219,20.922,29.32,PASSED,2.7657e-05,4.2781e-02,"AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx","GCC 11.4"

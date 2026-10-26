@@ -1,0 +1,66 @@
+{
+  "configurations": [
+    {
+      "name": "small_square_128",
+      "category": "small",
+      "M": 128,
+      "K": 128,
+      "N": 128,
+      "warmup": 5,
+      "iterations": 20,
+      "tile_size": 32
+    },
+    {
+      "name": "medium_square_512",
+      "category": "medium",
+      "M": 512,
+      "K": 512,
+      "N": 512,
+      "warmup": 3,
+      "iterations": 10,
+      "tile_size": 64
+    },
+    {
+      "name": "large_square_1024",
+      "category": "large",
+      "M": 1024,
+      "K": 1024,
+      "N": 1024,
+      "warmup": 2,
+      "iterations": 5,
+      "tile_size": 64
+    },
+    {
+      "name": "tall_rectangular",
+      "category": "rectangular",
+      "M": 1024,
+      "K": 256,
+      "N": 128,
+      "warmup": 3,
+      "iterations": 10,
+      "tile_size": 64
+    },
+    {
+      "name": "wide_rectangular",
+      "category": "rectangular",
+      "M": 128,
+      "K": 256,
+      "N": 1024,
+      "warmup": 3,
+      "iterations": 10,
+      "tile_size": 64
+    },
+    {
+      "name": "prime_non_divisible",
+      "category": "edge_case",
+      "M": 389,
+      "K": 457,
+      "N": 521,
+      "warmup": 3,
+      "iterations": 10,
+      "tile_size": 64
+    }
+  ],
+  "tile_size_sweep": [16, 32, 64, 128, 256],
+  "thread_sweep": [1, 2, 4, 8]
+}

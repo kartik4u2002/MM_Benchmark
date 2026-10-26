@@ -1,0 +1,36 @@
+# Build directories
+build/
+bin/
+lib/
+*.o
+*.obj
+*.exe
+*.out
+*.dylib
+*.so
+*.a
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# IDE and OS
+.vscode/
+.idea/
+.vs/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
